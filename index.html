@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<h1>Apt 201 Casa Del Rio reservations</h1>
+<body class="container"><br>
+     <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-start-date">Arrival</label>
+                        <input type="date" class="form-control" id="new-start-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-end-date">Departure</label>
+                        <input type="date" class="form-control" id="new-end-date">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-task">Number of Guests</label>
+                        <input type="text" class="form-control" id="new-task" placeholder="Number of Guests">
+                    </div>
+                    <br>
+                </div>
+                <div>        
+                    <button id="add" class="btn btn-primary from-control">Create</button>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Guests</th>
+            <th>Date Created</th>
+            <th>Arrival</th>
+            <th>Departure</th>
+            <th>Confirm</th> 
+        </tr>
+    </table>
+
+    <script src="todo.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
